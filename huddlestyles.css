@@ -1,0 +1,32 @@
+.navbar{
+  padding: 2rem;
+  background: #ffffff;
+}
+
+.heading-section, .image-section, .build-section{
+  padding: 7%;
+}
+
+.heading-section, .image-section, .communities-section, .center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mobile{
+  display: none;
+}
+
+.screen-image{
+  width: 50%;
+}
+
+.human-icons{
+  width: 40%;
+}
+
+.background{
+  width: 100%;
+}
