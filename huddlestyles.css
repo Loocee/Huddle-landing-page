@@ -1,3 +1,8 @@
+/***************************** head and nav section ********************************/
+body, footer{
+  margin: 0;
+  padding: 0;
+}
 .navbar{
   padding: 2rem;
   background: #ffffff;
@@ -7,12 +12,23 @@
   padding: 7%;
 }
 
+.heading-section{
+  text-align: center;
+}
+
+.heading, .heading-para, .heading-btn{
+  margin: 1rem 0;
+}
+.heading-para{
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
 .heading-section, .image-section, .communities-section, .center{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .mobile{
@@ -27,6 +43,62 @@
   width: 40%;
 }
 
+.community-container{
+  padding-bottom: 3%;
+}
+
+.communities-section{
+  text-align: left;
+}
+
 .background{
   width: 100%;
+  margin: 0;
+}
+
+.bg-row{
+  height: 14rem;
+}
+
+.blue-row{
+  background: #f6fbff;
+}
+
+/* .green-row{
+  background: hsl(192, 100%, 9%);
+} */
+
+.top-desktop1{
+  background-image: url(images/bg-section-top-desktop-1.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bottom-desktop1{
+  background-image: url(images/bg-section-bottom-desktop-1.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.top-desktop2{
+  background-image: url(images/bg-section-top-desktop-2.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bottom-desktop2{
+  background-image: url(images/bg-section-bottom-desktop-2.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.footer-desktop{
+  background-image: url(images/bg-footer-top-desktop.svg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
