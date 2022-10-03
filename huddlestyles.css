@@ -16,7 +16,7 @@ body, footer{
   text-align: center;
 }
 
-.heading, .heading-para, .heading-btn{
+.heading, .heading-para, .heading-btn, .communities-icon{
   margin: 1rem 0;
 }
 .heading-para{
@@ -36,7 +36,7 @@ body, footer{
 }
 
 .screen-image{
-  width: 50%;
+  width: 60%;
 }
 
 .human-icons{
@@ -47,8 +47,15 @@ body, footer{
   padding-bottom: 3%;
 }
 
-.communities-section{
-  text-align: left;
+.communities-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h2{
+  font-size: 3rem;
 }
 
 .background{
@@ -62,11 +69,20 @@ body, footer{
 
 .blue-row{
   background: #f6fbff;
+  padding: 3rem 0;  
 }
 
+.grow-together{
+  padding: 7% 18%;
+}
+
+.no-bg{
+  margin: 6rem 0;
+}
 /* .green-row{
   background: hsl(192, 100%, 9%);
 } */
+
 
 .top-desktop1{
   background-image: url(images/bg-section-top-desktop-1.svg);
