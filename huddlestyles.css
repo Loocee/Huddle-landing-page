@@ -8,6 +8,17 @@ body, footer{
   background: #ffffff;
 }
 
+.nav-btn{
+  border-color: hsl(322, 100%, 66%);
+  color: hsl(322, 100%, 66%);
+}
+
+.nav-btn:hover, .nav-btn:active, .nav-btn:focus{
+  border-color: hsl(321, 100%, 78%) !important;
+  color: hsl(321, 100%, 78%) !important;
+  cursor: pointer;
+}
+
 .heading-section, .image-section, .build-section{
   padding: 7%;
 }
@@ -16,9 +27,10 @@ body, footer{
   text-align: center;
 }
 
-.heading, .heading-para, .heading-btn, .communities-icon{
+.margin1{
   margin: 1rem 0;
 }
+
 .heading-para{
   margin-left: 33%;
   margin-right: 33%;
@@ -29,6 +41,22 @@ body, footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.heading-btn{
+  padding: 1rem 3rem;
+  background: hsl(322, 100%, 66%);
+  color: #fff;
+}
+
+.heading-btn:hover, .heading-btn:active, .heading-btn:focus{
+  background: hsl(321, 100%, 78%) !important;
+  color: #fff !important;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .mobile{
@@ -55,7 +83,7 @@ body, footer{
 }
 
 h2{
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .background{
@@ -69,7 +97,7 @@ h2{
 
 .blue-row{
   background: #f6fbff;
-  padding: 3rem 0;  
+  padding: 3rem 0;
 }
 
 .grow-together{
@@ -79,10 +107,14 @@ h2{
 .no-bg{
   margin: 6rem 0;
 }
-/* .green-row{
-  background: hsl(192, 100%, 9%);
-} */
 
+.green-row{
+  background: hsl(192, 100%, 9%);
+}
+
+footer{
+  color: #fff;
+}
 
 .top-desktop1{
   background-image: url(images/bg-section-top-desktop-1.svg);
