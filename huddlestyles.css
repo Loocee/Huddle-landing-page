@@ -2,6 +2,7 @@
 body{
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  font-size: 18px;
 }
 
 body, footer{
@@ -34,9 +35,13 @@ body, footer{
   margin: 1rem 0;
 }
 
+.heading{
+  font-size: 3rem;
+}
+
 .heading-para{
-  margin-left: 33%;
-  margin-right: 33%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .heading-section, .image-section, .communities-section, .center{
@@ -208,6 +213,10 @@ input{
 
 /*************************** media queries *********************************/
 @media (max-width: 1024px) {
+    .heading{
+    font-size: calc(1.5rem + 1.5vw);
+  }
+  
   .heading-para{
     margin-left: 25%;
     margin-right: 25%;
@@ -231,6 +240,10 @@ input{
 }
 
 @media (max-width: 768px) {
+    .heading{
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  
   .heading-para{
     margin-left: 20%;
     margin-right: 20%;
