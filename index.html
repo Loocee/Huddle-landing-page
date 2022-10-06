@@ -25,8 +25,35 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- css link  -->
+<link rel="stylesheet" href="css/huddlestyles.css">
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
 <body>
-    <main>
+  <main>
     <section id="nav-section">
       <nav class="container-fluid navbar navbar-expand-lg">
         <img src="images/huddlelogo.svg" class="navbar-brand" alt="Brand logo">
@@ -52,15 +79,15 @@
           <div class="communities-text">
             <img src="images/icon-communities.svg" class="communities-icon margin1" alt="Communities icon">
             <h2 class="communities-heading">1.4k+</h2>
-            <p>Communities Formed</p>
           </div>
+          <p class="communities-para margin1">Communities Formed</p>
         </div>
         <div class="col-md-6 col-sm-12 communities-section">
           <div class="communities-text">
             <img src="images/icon-messages.svg" class="communities-icon margin1" alt="Messages icon">
             <h2 class="communities-heading">2.7m+</h2>
-            <p>Messages Sent</p>
           </div>
+          <p class="communities-para margin1">Messages Sent</p>
         </div>
       </div>
       </div>
@@ -72,7 +99,7 @@
         </div>
         <div class="row blue-row">
           <div class="col-md-6 col-sm-12 mobile center">
-            <img class="human-icons grow-together" src="images/illustration-grow-together.svg" alt="Grow together illustration">
+            <img class="human-icons" src="images/illustration-grow-together.svg" alt="Grow together illustration">
           </div>
           <div class="col-md-6 col-sm-12 center">
             <div class="grow-together">
@@ -112,6 +139,9 @@
         <div class="row bg-row top-desktop2">
         </div>
         <div class="row blue-row">
+          <div class="col-md-6 col-sm-12 mobile center">
+            <img class="human-icons" src="images/illustration-your-users.svg" alt="Users illustration">
+          </div>
           <div class="col-md-6 col-sm-12 center">
             <div class="grow-together">
               <h3 class="margin1">Your Users</h3>
@@ -119,7 +149,7 @@
               once signed in to your app, your users can start chatting immediately.</p>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12 center">
+          <div class="col-md-6 col-sm-12 desktop center">
             <img class="human-icons" src="images/illustration-your-users.svg" alt="Users illustration">
           </div>
         </div>
@@ -141,6 +171,16 @@
     <div class="row bg-row footer-desktop">
     </div>
     <div class="row green-row">
+      <div class="col-md-6 col-sm-12 mobile1 text-div">
+        <h4 class="margin1">Newsletter</h4>
+        <p class="footer-para">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+        send you spam or pass on your email address</p>
+        <div class="flexbox margin-top">
+          <input class="margin-right email" type="email" name="email" placeholder="e.g jane@gmail.com">
+          <button type="button" name="button" class="btn subscribe-btn">Subscribe</button>
+          <span class="error">Check your email please</span>
+        </div>
+      </div>
       <div class="col-md-6 col-sm-12 text-div">
         <img src="images/footer-logo.svg" class="footer-icon margin1" alt="huddle logo">
         <p class="footer-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
@@ -159,16 +199,15 @@
           <img class="margin-right" src="images/icon-twitter.svg" alt="twitter icon">
         </div>
       </div>
-      <div class="col-md-6 col-sm-12 text-div">
+      <div class="col-md-6 col-sm-12 desktop text-div">
         <h4 class="margin1">Newsletter</h4>
         <p class="footer-para">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
         send you spam or pass on your email address</p>
         <div class="flexbox margin-top">
-          <input class="margin-right" type="text" name="email" placeholder="e.g jane@gmail.com">
-          <!-- <span class="error-mobile">Check your email please</span> -->
-          <button type="button" name="button" class="btn subscribe-btn">Subscribe</button>
+          <input class="margin-right email" type="email" name="email" value="" placeholder="e.g jane@gmail.com" autofocus>
+          <button type="submit" name="button" class="btn subscribe-btn">Subscribe</button>
+          <span class="error">Check your email please</span>
         </div>
-        <span class="error">Check your email please</span>
       </div>
       <div class="container-fluid green-row">
         <p class="attribution">
@@ -183,5 +222,7 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="huddle.js"></script>
 </html>
+
