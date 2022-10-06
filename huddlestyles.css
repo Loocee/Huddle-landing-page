@@ -261,7 +261,7 @@ input{
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .navbar-brand{
     width: 30%;
   }
