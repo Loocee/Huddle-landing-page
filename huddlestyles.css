@@ -1,8 +1,14 @@
 /***************************** nav and head section ********************************/
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
 body, footer{
   margin: 0;
   padding: 0;
 }
+
 .navbar{
   padding: 2rem;
   background: #ffffff;
@@ -21,9 +27,6 @@ body, footer{
 
 .heading-section, .image-section, .build-section{
   padding: 7%;
-}
-
-.heading-section{
   text-align: center;
 }
 
@@ -47,6 +50,7 @@ body, footer{
   padding: 1rem 3rem;
   background: hsl(322, 100%, 66%);
   color: #fff;
+  font-weight: 700;
 }
 
 .heading-btn:hover, .heading-btn:active, .heading-btn:focus, .subscribe-btn:hover, .subscribe-btn:active, .subscribe-btn:focus{
@@ -71,10 +75,6 @@ h1, h2, h3, h4{
   width: 50%;
 }
 
-.community-container{
-  padding-bottom: 3%;
-}
-
 .communities-text{
   display: flex;
   flex-direction: column;
@@ -86,6 +86,11 @@ h1, h2, h3, h4{
   font-size: 4rem;
 }
 
+.communities-para{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #999ea2;
+}
 /********************************** curve sections *************************************/
 .background{
   width: 100%;
@@ -116,6 +121,7 @@ h1, h2, h3, h4{
 
 footer{
   color: #fff;
+  font-size: 14px;
 }
 
 .text-div{
@@ -141,8 +147,17 @@ input{
   height: 2.4rem;
 }
 
+.input-error{
+    outline: none;
+    border: thin solid red;
+}
+
+.mobile1{
+  display: none;
+}
+
 .error{
-  /* display: none; */
+  display: none;
   color: hsl(0, 100%, 63%);
   font-size: 14px;
 }
@@ -231,6 +246,7 @@ input{
 
   input{
     width: 100%;
+    display: block;
   }
 
   .human-icons{
@@ -239,16 +255,108 @@ input{
 
   .subscribe-btn{
     display: flex;
+    position: absolute;
+    right: 2.3rem;
+    margin: 1rem 0 2rem;
   }
 }
 
 @media (max-width: 425px) {
+  .navbar-brand{
+    width: 30%;
+  }
+
+  .nav-btn{
+    padding: 0.2rem 1.2rem !important;
+  }
+
   .mobile{
-    display: block;
+    display: flex;
   }
 
   .desktop{
     display: none;
   }
-}
 
+  .heading-section, .image-section, .build-section{
+    padding: 13% 5%;
+  }
+
+  .heading-para{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .heading-btn{
+    padding: 0.5rem 2rem;
+  }
+
+  .communities-section{
+    margin: 1rem 0;
+  }
+
+  .bg-row{
+    height: 8rem;
+  }
+
+  .grow-together{
+    text-align: center;
+  }
+
+  .mobile1{
+    display: block;
+  }
+
+  .footer-icon{
+    width: 60%;
+  }
+
+  .footer-para{
+    margin-right: 0;
+  }
+
+  .text-div{
+    margin: 2rem 0;
+  }
+
+  .subscribe-btn{
+    display: flex;
+    position: absolute;
+    right: 1.4rem;
+  }
+
+  .top-desktop1{
+    background-image: url(images/bg-section-top-mobile-1.svg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .bottom-desktop1{
+    background-image: url(images/bg-section-bottom-mobile-1.svg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .top-desktop2{
+    background-image: url(images/bg-section-top-mobile-2.svg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .bottom-desktop2{
+    background-image: url(images/bg-section-bottom-mobile-2.svg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .footer-desktop{
+    background-image: url(images/bg-footer-top-mobile.svg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+}
