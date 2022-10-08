@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Click to see solution](https://www.frontendmentor.io/solutions/huddle-landing-page-with-curved-sections-using-bootstrap-_zmQRqHiPb)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
